@@ -72,6 +72,8 @@ function App() {
           onClose={handleCloseModal}
         />
       )}
+      
+      <Toaster />
     </div>
   );
 }
