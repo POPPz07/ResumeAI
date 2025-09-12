@@ -32,6 +32,8 @@ function App() {
 
   const renderMainContent = () => {
     switch (activeView) {
+      case 'dashboard':
+        return <Dashboard />;
       case 'jobs':
         return <JobPostings onViewCandidates={handleViewCandidates} />;
       case 'candidates':
@@ -42,13 +44,6 @@ function App() {
             onViewCandidate={handleViewCandidate}
           />
         ) : null;
-      case 'dashboard':
-        return (
-          <div className="p-8">
-            <h1 className="text-3xl font-bold text-slate-900">Dashboard</h1>
-            <p className="text-slate-600 mt-2">Welcome to TrueView Dashboard - Coming Soon!</p>
-          </div>
-        );
       case 'settings':
         return (
           <div className="p-8">
@@ -57,7 +52,7 @@ function App() {
           </div>
         );
       default:
-        return <JobPostings onViewCandidates={handleViewCandidates} />;
+        return <Dashboard />;
     }
   };
 
