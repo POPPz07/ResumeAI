@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import "./App.css";
 import Sidebar from "./components/Sidebar";
+import Dashboard from "./components/Dashboard";
 import JobPostings from "./components/JobPostings";
 import CandidateDetails from "./components/CandidateDetails";
 import CandidateModal from "./components/CandidateModal";
+import { Toaster } from "./components/ui/toaster";
 
 function App() {
   const [activeView, setActiveView] = useState('jobs');
