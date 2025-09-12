@@ -8,7 +8,7 @@ import CandidateModal from "./components/CandidateModal";
 import { Toaster } from "./components/ui/toaster";
 
 function App() {
-  const [activeView, setActiveView] = useState('jobs');
+  const [activeView, setActiveView] = useState('dashboard');
   const [selectedJob, setSelectedJob] = useState(null);
   const [selectedCandidate, setSelectedCandidate] = useState(null);
 
