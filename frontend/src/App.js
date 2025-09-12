@@ -46,13 +46,10 @@ function App() {
             onViewCandidate={handleViewCandidate}
           />
         ) : null;
+      case 'profile':
+        return <Profile />;
       case 'settings':
-        return (
-          <div className="p-8">
-            <h1 className="text-3xl font-bold text-slate-900">Settings</h1>
-            <p className="text-slate-600 mt-2">Settings page - Coming Soon!</p>
-          </div>
-        );
+        return <Settings />;
       default:
         return <Dashboard />;
     }
