@@ -5,6 +5,8 @@ import Dashboard from "./components/Dashboard";
 import JobPostings from "./components/JobPostings";
 import CandidateDetails from "./components/CandidateDetails";
 import CandidateModal from "./components/CandidateModal";
+import Profile from "./components/Profile";
+import Settings from "./components/Settings";
 import { Toaster } from "./components/ui/toaster";
 
 function App() {
